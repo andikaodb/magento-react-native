@@ -59,7 +59,7 @@ buck-out/
 /ios/Pods/
 
 # Magento configuration file
-src/config/magento.js
+# src/config/magento.js
 
 coverage
 
