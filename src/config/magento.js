@@ -14,7 +14,7 @@ export const magentoOptions = {
   store: 'default', // store code // Stores > All Stores > Store View > Code
   authentication: {
     integration: {
-      access_token: 'oruv4e92mm6o90y6645dyeei5l1htsxl', //
+      access_token: 'oruv4e92mm6o90y6645dyeei5l1htsxl', //test
     },
   },
   reviewEnabled: false, // set true ONLY if you install https://github.com/troublediehard/mma-customapi on the magento backend
