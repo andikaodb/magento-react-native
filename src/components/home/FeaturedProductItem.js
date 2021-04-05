@@ -68,7 +68,7 @@ const FeaturedProductItem = ({
 const styles = StyleSheet.create({
   container: theme => ({
     padding: theme.spacing.tiny,
-    width: theme.dimens.WINDOW_WIDTH * 0.32,
+    width: theme.dimens.WINDOW_WIDTH * 0.5,
   }),
   containerStyle: theme => ({
     flexDirection: 'column',
