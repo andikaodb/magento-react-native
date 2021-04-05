@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import {
-  ScrollView, View, StyleSheet, RefreshControl,
+  ScrollView, View, StyleSheet, RefreshControl, Dimensions, Image
 } from 'react-native';
 import { connect } from 'react-redux';
 import _ from 'lodash';
@@ -17,11 +17,17 @@ import NavigationService from '../../navigation/NavigationService';
 import { ThemeContext } from '../../theme';
 import { translate } from '../../i18n';
 
+const screenWidth = Dimensions.get('window').width;
+const screenHeight = Dimensions.get('window').height;
+
 class HomeScreen extends Component {
   static contextType = ThemeContext;
 
   static navigationOptions = ({ navigation }) => ({
     title: translate('home.title'),
+    HeaderTitleStyle:{
+      marginLeft: 55;
+    },
     headerBackTitle: ' ',
     headerLeft: (
       <MaterialHeaderButtons>
@@ -29,6 +35,14 @@ class HomeScreen extends Component {
       </MaterialHeaderButtons>
     ),
     headerRight: <CurrencyPicker />,
+    headerBackground: (
+      <Image 
+        source={{
+          uri: 'https://yt3.ggpht.com/ytc/AAUvwniy5e1TEFv_43J1mCeYEv1MuRwt90tfDeiwzNulsgI=s900-c-k-c0x00ffffff-no-rj',
+        }}
+        style={{width: 56, height: 56, marginLeft:50}}
+      />
+    )
   });
 
   componentDidMount() {
