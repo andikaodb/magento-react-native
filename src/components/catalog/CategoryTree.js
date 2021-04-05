@@ -25,7 +25,8 @@ const CategoryTree = ({
     if (categoryTree) {
       return (
         <CategoryTreeList
-          categories={categoryTree.children_data}
+          // categories={categoryTree.children_data}
+          categories={categoryTree.children_data.map((dt)=>dt).filter((ds)=>ds.is_active == true)}
           refreshControl={(
             <RefreshControl
               refreshing={refreshing}
