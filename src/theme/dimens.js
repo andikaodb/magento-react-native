@@ -19,8 +19,8 @@ export default {
   /**
    * HomeScreen and it's component related constants
    */
-  homeProductImageWidth: 80,
-  homeProductImageHeight: 80,
+  homeProductImageWidth: 180,
+  homeProductImageHeight: 180,
   /**
    * SeacrhScreen and it's component related constants
    */

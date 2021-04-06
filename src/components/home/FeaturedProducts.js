@@ -56,7 +56,7 @@ FeaturedProducts.defaultProps = {
 
 const styles = StyleSheet.create({
   container: theme => ({
-    height: theme.dimens.WINDOW_HEIGHT * 0.3,
+    height: theme.dimens.WINDOW_HEIGHT * 0.45,
     paddingTop: 10,
   }),
   title: {

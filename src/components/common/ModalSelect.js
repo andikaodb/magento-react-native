@@ -3,6 +3,7 @@ import { View, ViewPropTypes } from 'react-native';
 import ModalSelector from 'react-native-modal-selector';
 import PropTypes from 'prop-types';
 import { Input } from './Input';
+import {translate} from '../../i18n'
 
 const ModalSelect = ({
   data,
@@ -15,8 +16,8 @@ const ModalSelect = ({
   const [value, setValue] = useState('');
 
   const _onChange = (option) => {
-    setValue(attribute === 'CurrencyCode' ? option.label : `${label} : ${option.label}`);
-
+    // setValue(attribute === 'CurrencyCode' ? option.label : `${label} : ${option.label}`);
+    setValue(attribute === 'CurrencyCode' ? option.label : `${translate('common.region')} : ${option.label}`);
     if (onChange) {
       onChange(attribute, option.key);
     }
