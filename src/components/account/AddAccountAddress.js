@@ -125,7 +125,7 @@ class AddAccountAddress extends Component {
 
   renderRegions = () => {
     const theme = this.context;
-    const { countryId, countries, region } = this.props;
+    const { countryId, countries, region } = this.props; //adding region
     if (countryId && countryId.length && countries && countries.length) {
       const country = countries.find(item => item.id === countryId);
       if (country && country.available_regions) {
