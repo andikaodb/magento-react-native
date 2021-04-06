@@ -24,7 +24,12 @@ const INITIAL_STATE = {
     countryId: '',
     street: '',
     city: '',
-    region: '',
+    // region: '',
+    region: {
+      regionCode: '',
+      region: '',
+      regionId: '',
+    },
     loading: false,
     error: false,
   },

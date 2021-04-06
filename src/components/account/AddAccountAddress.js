@@ -125,7 +125,7 @@ class AddAccountAddress extends Component {
 
   renderRegions = () => {
     const theme = this.context;
-    const { countryId, countries } = this.props;
+    const { countryId, countries, region } = this.props;
     if (countryId && countryId.length && countries && countries.length) {
       const country = countries.find(item => item.id === countryId);
       if (country && country.available_regions) {
@@ -138,9 +138,12 @@ class AddAccountAddress extends Component {
           <ModalSelect
             disabled={data.length === 0}
             key="regions"
-            label={translate('common.region')}
-            attribute="Region"
-            value="Region"
+            // label={translate('common.region')}
+            // attribute="Region"
+            // value="Region"
+            label={region.region ? `${translate('common.region')} : ${region.region}` : translate('common.region')}
+            attribute={translate('common.region')}
+            value={translate('common.region')} 
             data={data}
             onChange={this.regionSelect}
             style={styles.inputContainer(theme)}
