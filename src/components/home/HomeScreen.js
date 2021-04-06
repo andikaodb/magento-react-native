@@ -25,8 +25,8 @@ class HomeScreen extends Component {
 
   static navigationOptions = ({ navigation }) => ({
     title: translate('home.title'),
-    HeaderTitleStyle:{
-      marginLeft: 55;
+    headerTitleStyle:{
+      marginLeft:55
     },
     headerBackTitle: ' ',
     headerLeft: (
