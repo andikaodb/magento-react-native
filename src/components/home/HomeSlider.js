@@ -17,7 +17,8 @@ const HomeSlider = ({
     <View key={index} style={styles.slide}>
       <FastImage
         style={styles.imageStyle(theme)}
-        resizeMode="cover"
+        // resizeMode="cover"
+        resizeMode="stretch"
         source={{ uri: magento.getMediaUrl() + slide.image }}
       />
       <Text style={styles.slideTitle(theme)}>{slide.title}</Text>
@@ -26,7 +27,8 @@ const HomeSlider = ({
 
   return (
     <View style={[styles.imageContainer(theme), style]}>
-      <Swiper showsPagination={false} pagingEnabled autoplay={false}>
+      <Swiper showsPagination={false} pagingEnabled autoplay={true}> 
+      {/* default : true*/}
         {renderMediaItems()}
       </Swiper>
     </View>
