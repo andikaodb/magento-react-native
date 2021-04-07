@@ -38,7 +38,8 @@ class HomeScreen extends Component {
     headerBackground: (
       <Image 
         source={{
-          uri: 'https://yt3.ggpht.com/ytc/AAUvwniy5e1TEFv_43J1mCeYEv1MuRwt90tfDeiwzNulsgI=s900-c-k-c0x00ffffff-no-rj',
+          // uri: 'https://yt3.ggpht.com/ytc/AAUvwniy5e1TEFv_43J1mCeYEv1MuRwt90tfDeiwzNulsgI=s900-c-k-c0x00ffffff-no-rj',
+          uri: 'https://pbs.twimg.com/profile_images/820894852330065920/PZ2FVTNX_400x400.jpg',
         }}
         style={{width: 56, height: 56, marginLeft:50}}
       />
